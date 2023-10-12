@@ -242,7 +242,7 @@ export default {
         user(prevUser, newUser) { console.log("Зміни в об'єкті виявлені!"); },
         "user.age"(prevAge, newAge) { console.log("відбулися зміни властивості 'age'"); },
         arithmeticMeanUsersAge(prevAge, newAge) {
-            alert('відбулися зміни у computed property');
+            console.log('відбулися зміни у computed property');
         },
 
         user: {
@@ -264,7 +264,7 @@ export default {
 
                     })
                     .catch(error => {
-
+                        this.countryList = ["Даних не знайдено"];
                         console.log(error);
                     });
             } else {
