@@ -149,7 +149,7 @@ export default {
         getId() {
             return "id" + Math.random().toFixed(3).toString(16).slice(2)
         },
-        
+
         changeShowTitle() {
             this.isShowTitle = !this.isShowTitle;
         },
@@ -274,7 +274,7 @@ export default {
 
         page: {
             handler(newNum, oldNum) {
-                console.log(`Значення лічильника було змінено з ${oldNum} на ${newNum}`);
+                console.log(`Значення 'page' було змінено з ${oldNum} на ${newNum}`);
             },
             immediate: true // Включаємо опцію immediate
         }
