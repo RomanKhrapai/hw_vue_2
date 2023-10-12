@@ -53,7 +53,7 @@
                     {{ item + " " }}
                 </li>
             </ul>
-            <h3>Введіть рік для показу старших користувачів</h3>
+            <h3>Введіть вік для показу старших користувачів</h3>
             <SearchForm @setAgeProp='setAge'></SearchForm>
             <ul>
                 <li v-for="user in newUsers" :key="user.id">
